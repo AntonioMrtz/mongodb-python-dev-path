@@ -1,0 +1,49 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+
+# Distribution/build files
+build/
+dist/
+*.egg-info/
+
+# Installed dependencies
+*.egg
+*.wheel
+
+# IDE and editor configurations
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime*
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# pytest cache and test artifacts
+.cache/
+*.log
+coverage/
+htmlcov/
+
+# Configuration files and sensitive information
+*.env
+*.secret
+*.key
+config/settings_local.py
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Others
+*.bak
+*.tmp

@@ -3,7 +3,7 @@
 ![logo](/assets/logo.png)
 
 
-## Description
+## 👀 Description
 
 This repository contains my notes for the [MongoDB Python Developer Path](https://learn.mongodb.com/learn/learning-path/mongodb-python-developer-path)
 
@@ -12,3 +12,13 @@ This learning path contains a series of courses to teach MongoDB skills. In this
 ## 📚 Docs
 
 https://www.mongodb.com/docs/manual/
+
+
+## 🛠️ Set up
+
+```console
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
