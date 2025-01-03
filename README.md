@@ -1,6 +1,6 @@
 # MongoDB Python Developer Path
 
-![logo](/assets/logo.png)
+![logo](/docs/assets/logo.png)
 
 ## 👀 Description
 
@@ -10,7 +10,9 @@ This learning path contains a series of courses to teach MongoDB skills. In this
 
 ## 📚 Docs
 
-https://www.mongodb.com/docs/manual/
+* [MKDocs with my certificate notes](https://antoniomrtz.github.io/mongodb-python-dev-path/)
+* [Official MongoDB docs](https://www.mongodb.com/docs/manual/)
+
 
 ## 🛠️ Set up
 
@@ -18,5 +20,14 @@ https://www.mongodb.com/docs/manual/
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+```
+
+## 🛠️📚 Set up docs
+
+```console
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements-docs.txt
+mkdocs serve
 ```
 
