@@ -1,6 +1,6 @@
-# Modifying query results
+# Modifying query results Operations
 
-## Lesson 1: Sorting and Limiting Query Results
+## Sorting and Limiting Query Results
 
 ### Sort
 
@@ -31,8 +31,37 @@ db.companies
   .sort({ number_of_employees: -1, _id: 1 })
   .limit(3);
 ```
+### Skip
 
-## Lesson 2: Returning Specific Data from a Query
+Skips certain number of documents in a query result. Useful por pagination.
+
+```ts
+db.products.find().skip(2);
+```
+If the previous query is runned with the followind dataset:
+
+```ts
+[
+  { _id: 1, name: "Laptop", price: 1000 },
+  { _id: 2, name: "Mouse", price: 20 },
+  { _id: 3, name: "Keyboard", price: 50 },
+  { _id: 4, name: "Monitor", price: 300 },
+  { _id: 5, name: "Headphones", price: 80 }
+]
+```
+
+We will get:
+
+```ts
+[
+  { _id: 3, name: "Keyboard", price: 50 },
+  { _id: 4, name: "Monitor", price: 300 },
+  { _id: 5, name: "Headphones", price: 80 }
+]
+```
+
+
+## Returning Specific Data from a Query
 
 ### Projections
 
@@ -65,7 +94,7 @@ db.inspections.find(
 )
 ```
 
-## Lesson 3: Counting Documents in a Collection
+## Counting Documents in a Collection
 
 Count number of documents that match a specify query:
 

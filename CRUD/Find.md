@@ -1,39 +1,17 @@
-# CRUD Operations
+# Find Operations
 
-## Lesson 1. Insert document
+## Find documents
+
+### Find only one document
 
 ```ts
-db.collection.insertOne({
-  student_id: 654321,
-  products: [
-    {
-      type: "exam",
-      score: 90,
-    },
-    {
-      type: "homework",
-      score: 59,
-    },
-    {
-      type: "quiz",
-      score: 75,
-    },
-    {
-      type: "homework",
-      score: 88,
-    },
-  ],
-  class_id: 550,
-})
+db.collection.findOne({_id:ObjectID("id")})
 ```
-
-## Lesson 2. Find a document
 
 ### With equality
 
 ```ts
 db.collection.find({_id:ObjectID("id")})
-
 ```
 
 ### With $in operator
@@ -42,7 +20,7 @@ db.collection.find({_id:ObjectID("id")})
 db.collection.find({city : {$in : ["CHICAGO"] }})
 ```
 
-## Lesson 3. Finding Documents by Using Comparison Operators
+### Finding Documents by Using Comparison Operators
 
 * `$gt` - Greater than
 * `$lt` - Less than
@@ -53,7 +31,7 @@ db.collection.find({city : {$in : ["CHICAGO"] }})
 db.sales.find({ "items.price": { $gt: 50}})
 ```
 
-## Lesson 4. Quering on array elements
+## Quering on array elements
 
 ### Find Documents with an Array That Contains a Specified Value
 
@@ -75,7 +53,7 @@ db.sales.find({
 })
 ```
 
-## Lesson 5. Finding Documents by using Logical Operators
+## Finding Documents by using Logical Operators
 
 ### Implicit $and
 

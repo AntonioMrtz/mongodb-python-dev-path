@@ -1,8 +1,8 @@
-# Replace and Delete Documents
+# Update Operations
 
-## Lesson 1. Replacing a Document
+## Replacing a Document
 
-Select the document to replace and insert all the new fields that it will have. The fields not inserted will stay the same. In the example `_id` will not change in the new document.
+Select the document to replace and insert all the new fields that it will have. The fields not inserted will stay the same. In the example `_id` will not change in the new document. It only works with one document, there's no `replace` or `replaceMany` method.
 
 ```ts
 db.books.replaceOne(
@@ -21,7 +21,7 @@ db.books.replaceOne(
 )
 ```
 
-## Lesson 2. Updating Documents by Using updateOne()
+## Updating Documents by Using updateOne()
 
 The `updateOne()` method accepts a filter document, an update document, and an optional options object. MongoDB provides update operators and options to help you update documents. In this section, we'll cover three of them: `$set`, `upsert`, and `$push`.
 
@@ -66,7 +66,7 @@ db.podcasts.updateOne(
 )
 ```
 
-## Lesson 3. Updating Documents by Using findAndModify()
+## Updating Documents by Using findAndModify()
 
 New option is specified if want to return the modified document. This query is useful because:
 
@@ -81,7 +81,7 @@ db.podcasts.findAndModify({
 })
 ```
 
-## Lesson 4. Updating Documents by Using updateMany()
+## Updating Documents by Using updateMany()
 
 * There's no rollback if some document update fails
 
@@ -90,18 +90,4 @@ db.books.updateMany(
   { publishedDate: { $lt: new Date("2019-01-01") } },
   { $set: { status: "LEGACY" } }
 )
-```
-
-## Lesson 5. Deleting Documents
-
-### Delete One Document
-
-```ts
-db.podcasts.deleteOne({ _id: Objectid("6282c9862acb966e76bbf20a") })
-```
-
-### Delete Many Documents
-
-```ts
-db.podcasts.deleteMany({category: “crime”})
 ```

@@ -1,4 +1,4 @@
-# Connecting to MongoDB
+# Database Connection
 
 ## URI format
 
