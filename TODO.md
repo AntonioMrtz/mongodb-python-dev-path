@@ -1,3 +1,1 @@
-- update unset
-- update max
 - Modifying Query Results + bulk write python

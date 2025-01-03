@@ -66,6 +66,29 @@ db.podcasts.updateOne(
 )
 ```
 
+### $unset
+
+Deletes a field from a document
+
+```ts
+db.users.update(
+  { name: "Alice" },
+  { $unset: { status: "" } }
+)
+```
+
+### $max
+
+Makes the update only if the field value is higher than another one. It will update score field to 90 only if it's higher than the existing field value.
+
+```ts
+db.users.update(
+  { name: "Alice" },
+  { $max: { score: 90 } }
+)
+```
+
+
 ## Updating Documents by Using findAndModify()
 
 New option is specified if want to return the modified document. This query is useful because:
