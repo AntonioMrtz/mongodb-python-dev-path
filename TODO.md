@@ -1,1 +1,1 @@
-- Modifying Query Results + bulk write python
+- Modifying Query Results python
