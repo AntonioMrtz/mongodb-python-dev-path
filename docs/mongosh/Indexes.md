@@ -1,6 +1,6 @@
 # Indexes
 
-## Lesson 1: Using Indexes in Collections 
+## Using Indexes in Collections 
 
 ### ✅ Benefits
 
@@ -40,7 +40,7 @@ db.customers.explain().find({
 ``` 
 
 
-## Lesson 2: Creating a Single Field Index
+## Creating a Single Field Index
 
 
 ### Single field index creation
@@ -68,7 +68,7 @@ db.customers.createIndex({
 })
 ```
 
-## Lesson 3: Creating a Multikey Index
+## Creating a Multikey Index
 
 * Only one array field for index.
 
@@ -89,7 +89,7 @@ db.customers.createIndex({
 })
 ```
 
-## Lesson 4: Working with Compound Indexes in MongoDB 
+## Working with Compound Indexes 
 
 Can be turned into `multikey Index` if one index is a field with an array.
 
@@ -135,7 +135,7 @@ db.customers.createIndex({
 If were getting fields from a query and they're not used for sort or filter, we should include them at the end of the query for better performance
 
 
-## Lesson 5: Deleting MongoDB Indexes
+## Deleting MongoDB Indexes
 
 Removing redundant or unused indexes can be useful. Restoring an index is more costly than simply hiding it, so hiding indexes is recommended.
 

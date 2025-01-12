@@ -9,11 +9,14 @@ nav:
   - BSON: BSON/BSON.md
   
   - mongosh:
+    - Connect: mongosh/Connect.md
     - Insert: mongosh/Insert.md
     - Find: mongosh/Find.md
     - Update: mongosh/Update.md
     - Delete: mongosh/Delete.md
     - Modifying Query Results: mongosh/Modifying_Query_Results.md
+    - Aggregation: mongosh/Aggregation.md
+    - Indexes: mongosh/Indexes.md
     - Bulk Write: mongosh/Bulk_Write.md
     
   - pymongo: 
@@ -23,6 +26,7 @@ nav:
     - Update: python/Update.md
     - Delete: python/Delete.md
     - Transactions: python/Transactions.md
+    - Bulk Write: python/Bulk_Write.md
   
 theme:
   logo: assets/logo.png
