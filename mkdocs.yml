@@ -10,7 +10,6 @@ nav:
   
   - mongosh:
     - Connect: mongosh/Connect.md
-    - Connect: mongosh/Operators.md
     - Insert: mongosh/Insert.md
     - Find: mongosh/Find.md
     - Update: mongosh/Update.md
@@ -18,6 +17,7 @@ nav:
     - Modifying Query Results: mongosh/Modifying_Query_Results.md
     - Aggregation: mongosh/Aggregation.md
     - Indexes: mongosh/Indexes.md
+    - Operators: mongosh/Operators.md
     - Bulk Write: mongosh/Bulk_Write.md
     
   - pymongo: 
