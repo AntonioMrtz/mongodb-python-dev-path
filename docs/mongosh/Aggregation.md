@@ -40,7 +40,7 @@ Find documents that match certain condition.
 
 ## $group
 
-Group documents by a field name.
+Group documents by a field name. It will return one document per unique key. The _id field specifies which field we're using to group the data.
 
 ```ts
 {
