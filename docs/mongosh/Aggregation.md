@@ -84,7 +84,7 @@ Select fields for output document.
   $project:{
 
     field1:0, // do not include
-    field2:1 // include
+    field2:1, // include
     field3: $field1
   
   }
