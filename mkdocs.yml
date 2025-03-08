@@ -19,6 +19,7 @@ nav:
     - Aggregation: mongosh/Aggregation.md
     - Indexes: mongosh/Indexes.md
     - Operators: mongosh/Operators.md
+    - Schema validation: mongosh/Schema_Validation.md
     - Bulk Write: mongosh/Bulk_Write.md
     
   - pymongo: 
@@ -30,6 +31,9 @@ nav:
     - Aggregation: python/Aggregation.md
     - Transactions: python/Transactions.md
     - Bulk Write: python/Bulk_Write.md
+
+  - Model design:
+    - Analysis: Model_Design/Analysis.md
   
 theme:
   logo: assets/logo.png
@@ -39,14 +43,14 @@ theme:
     - navigation.indexes
   palette:
     - scheme: slate
-      primary: black
-      accent: blue
+      primary: green
+      accent: light green
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: green
+      accent: light green
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
