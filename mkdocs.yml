@@ -14,6 +14,7 @@ nav:
     - Find: mongosh/Find.md
     - Update: mongosh/Update.md
     - Delete: mongosh/Delete.md
+    - Lookup: mongosh/Lookup.md
     - Modifying Query Results: mongosh/Modifying_Query_Results.md
     - Aggregation: mongosh/Aggregation.md
     - Indexes: mongosh/Indexes.md
